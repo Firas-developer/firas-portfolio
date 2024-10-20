@@ -160,7 +160,7 @@ const Portfolio = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://localhost:5000/submit-form', formData, {
+      const response = await axios.post('https://firas-portfolio-server.vercel.app/submit-form', formData, {
         headers: {
           'Content-Type': 'application/json'
         }
