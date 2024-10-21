@@ -92,7 +92,7 @@ const Portfolio = () => {
       company: "Error Makes Clever",
       role: "Full Stack Developer | Internship",
       duration: "April 2024 - May 2024",
-      certificateLink: "https://drive.google.com/file/d/1c8bz-SyPARNfDi9W-xg-qhECltpchNA-/view?usp=sharing",
+      certificateLink: "https://drive.google.com/file/d/1dcTmBpOMks-O7fycgaXze3C62Qdk5f5E/view?usp=sharing",
     },
     {
       company: "Sync Interns",
@@ -239,21 +239,18 @@ const Portfolio = () => {
       )}
 
       {/* Get Started Section */}
-      <main className='p-5 flex flex-col justify-center items-center' id='getstarted'>
+      <main className='p-5 flex flex-col my-10 justify-center items-center' id='getstarted'>
         <div className='text-center'>
-          <h1 className='text-[36px] md:text-[48px] lg:text-[60px] my-5 font-bold text-black'>
-            Get Started with <u>My Portfolio</u>
-          </h1>
-          <h1 className='text-[28px] md:text-[40px] lg:text-[50px] font-bold'>
+          <h1 className='text-[28px] md:text-[40px] font-bold'>
             Welcome to My Digital Workspace,
           </h1>
-          <h1 className='text-[28px] md:text-[40px] lg:text-[50px] font-bold'>
+          <h1 className='text-[28px] md:text-[40px] font-bold'>
             Creative Full Stack Developer Specialized in
           </h1>
-          <h1 className='text-[28px] md:text-[40px] lg:text-[50px] font-bold'>
+          <h1 className='text-[28px] md:text-[40px] font-bold'>
             MERN Stack Technology
           </h1>
-          <p className='mt-10 text-lg md:text-xl lg:text-2xl font-semibold text-gray-500'>
+          <p className='mt-10 text-lg md:text-xl font-semibold text-gray-500'>
             Success is not just about achieving goals; it's about the journey of Learning, Growing, and Experience
           </p>
         </div>
@@ -265,9 +262,9 @@ const Portfolio = () => {
 
       {/* About Me Section */}
       <main className='mb-5 animated-section' id='knowme'>
-        <h1 className='md:text-[48px] lg:text-[55px] text-[36px] mx-10 md:mx-0 font-bold text-center'>Know More <u>About Me</u></h1>
-        <div className='md:text-xl m-5 md:text-center'>
-          <p>A Bachelor of Engineering <b>Computer Science Engineer</b> student with a deep passion for technology and the latest trends in the field. Beyond my academic pursuits, <b>I am dedicated to helping students who face challenges</b> in learning new skills or overcoming obstacles in the problem-solving. <br className='hidden md:block' /> Having experienced the learning curve myself, I understand the frustration of feeling stuck and unable to find solutions. <b>That’s why I’m committed <br className='hidden md:block' /> to guiding and mentoring students</b> through those difficult phases, providing the support and knowledge to unlock their potential and succeed.</p>
+        <h1 className='md:text-[40px] text-[36px] mx-10 md:mx-0 font-bold text-center'>Know More <u>About Me</u></h1>
+        <div className='md:text-lg m-5 mx-10'>
+          <p>A Bachelor of Engineering <b>Computer Science Engineer</b> student with a deep passion for technology and the latest trends in the field. Beyond my academic pursuits, <b>I am dedicated to helping students who face challenges</b> in learning new skills or overcoming obstacles in the problem-solving. Having experienced the learning curve myself, I understand the frustration of feeling stuck and unable to find solutions. <b>That’s why I’m committed  to guiding and mentoring students</b> through those difficult phases, providing the support and knowledge to unlock their potential and succeed.</p>
         </div>
         <div className='flex flex-col lg:flex-row gap-[8%]'>
           <div className='md:mt-10 mx-10 lg:ml-24 flex flex-col md:flex-row items-center gap-5'>
@@ -275,7 +272,7 @@ const Portfolio = () => {
             <img src={about3} className='md:h-[405px] w-full' alt="" />
           </div>
           <div className='mt-10 lg:w-[50%] mx-5 lg:mx-0 lg:mr-10 p-3 pb-[-55px] shadow-gray-600 shadow-2xl rounded-xl'>
-            <h1 className='text-3xl ml-10 text-center font-bold text'>What I Do</h1>
+            <h1 className='text-2xl ml-10 text-center font-bold text'>What I Do</h1>
             <p className='mt-2 font-bold'>Role: MERN Stack Developer</p>
             <p>I'm a passionate and versatile Full-Stack Developer in the MERN Stack
               <b> (MongoDB, Express.js, React, and Node.js).</b>
@@ -290,10 +287,10 @@ const Portfolio = () => {
 
       {/* Skills Section */}
       <div id='techstack'
-        className={`tech-stack-section animated-section m-5 lg:m-10 text-center transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'
+        className={`tech-stack-section animated-section m-5 mt-14 lg:m-14 text-center transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'
           }`}
       >
-        <h1 className='text-[36px] md:text-[40px] lg:text-[55px] font-bold'>
+        <h1 className='text-[36px] md:text-[40px] font-bold'>
           <u>Tech Stack</u> Insights
         </h1>
 
@@ -362,13 +359,13 @@ const Portfolio = () => {
 
       {/* Project Section */}
       <div id='project'>
-        <h1 className='animated-section text-[36px] md:text-[40px] lg:text-[55px] font-bold text-center mt-10'>Latest <span className='underline'>Projects</span></h1>
+        <h1 className='animated-section text-[36px] md:text-[40px] font-bold text-center mt-10'>Latest <span className='underline'>Projects</span></h1>
         <Project />
       </div>
 
       {/* Internship Section */}
       <div className="animated-section flex flex-col items-center justify-center" id='internship'>
-        <h1 className="text-[36px] md:text-[40px] lg:text-[55px] underline text-center m-3 font-bold">Internships</h1>
+        <h1 className="text-[36px] md:text-[40px] underline text-center m-3 font-bold">Internships</h1>
         <div className="flex flex-col items-center justify-center w-full px-4">
           {details.map((item, index) => {
             const isEven = index % 2 === 0;
@@ -405,7 +402,7 @@ const Portfolio = () => {
 
       {/* Contact Section */}
       <section className="contact animated-section mt-14 mx-4 md:mx-20" id="contact">
-        <h2 className="heading text-[32px] md:text-[50px] font-bold text-center mb-6">
+        <h2 className="heading text-[32px] md:text-[40px] font-bold text-center mb-6">
           <i className="fas fa-headset"></i> Get in <span className="text-blue-600">Touch</span>
         </h2>
 
