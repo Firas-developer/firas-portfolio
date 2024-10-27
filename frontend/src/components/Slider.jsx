@@ -19,7 +19,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="slider-container w-full h-[300px] md:h-[500px] lg:h-[600px] mx-auto overflow-hidden relative">
+    <div className="slider-container w-full h-[300px] md:h-[500px] lg:h-[600px] mx-auto rounded-xl overflow-hidden relative">
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}

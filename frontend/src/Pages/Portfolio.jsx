@@ -174,7 +174,7 @@ const Portfolio = () => {
   return (
     <div>
       {/* Nabar Section */}
-      <nav className='p-5 sticky top-0 bg-white shadow-xl z-40 shadow-gray-200 px-10 flex items-center justify-between'>
+      <nav className='p-5 sticky top-0 bg-white shadow-xl z-50 shadow-gray-200 px-10 flex items-center justify-between'>
         <div className='flex items-center gap-24'>
           <div className='flex items-center relative w-[15%] md:w-[10%] lg:w-[5%]'>
             <img src={logo1} alt="Logo 1" className='md:ml-0 -ml-5' />
