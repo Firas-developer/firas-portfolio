@@ -241,13 +241,13 @@ const Portfolio = () => {
       {/* Get Started Section */}
       <main className='p-5 flex flex-col my-10 justify-center items-center' id='getstarted'>
         <div className='text-center'>
-          <h1 className='text-[28px] md:text-[40px] font-bold'>
+          <h1 className='text-[26px] md:text-[40px] font-bold'>
             Welcome to My Digital Workspace,
           </h1>
-          <h1 className='text-[28px] md:text-[40px] font-bold'>
+          <h1 className='text-[26px] md:text-[40px] font-bold'>
             Creative Full Stack Developer Specialized in
           </h1>
-          <h1 className='text-[28px] md:text-[40px] font-bold'>
+          <h1 className='text-[26px] md:text-[40px] font-bold'>
             MERN Stack Technology
           </h1>
           <p className='mt-10 text-lg md:text-xl font-semibold text-gray-500'>
@@ -261,18 +261,18 @@ const Portfolio = () => {
       </main>
 
       {/* About Me Section */}
-      <main className='mb-5 animated-section' id='knowme'>
-        <h1 className='md:text-[40px] text-[36px] mx-10 md:mx-0 font-bold text-center'>Know More <u>About Me</u></h1>
+      <main className='mb-5 animated-section md:mx-20' id='knowme'>
+        <h1 className='md:text-[40px] text-[26px] mx-10 md:mx-0 font-bold text-center'>Know More <u>About Me</u></h1>
         <div className='md:text-lg m-5 mx-10'>
           <p>A Bachelor of Engineering <b>Computer Science Engineer</b> student with a deep passion for technology and the latest trends in the field. Beyond my academic pursuits, <b>I am dedicated to helping students who face challenges</b> in learning new skills or overcoming obstacles in the problem-solving. Having experienced the learning curve myself, I understand the frustration of feeling stuck and unable to find solutions. <b>That’s why I’m committed  to guiding and mentoring students</b> through those difficult phases, providing the support and knowledge to unlock their potential and succeed.</p>
         </div>
         <div className='flex flex-col lg:flex-row gap-[8%]'>
-          <div className='md:mt-10 mx-10 lg:ml-24 flex flex-col md:flex-row items-center gap-5'>
-            <img src={about2} alt="" />
-            <img src={about3} className='md:h-[405px] w-full' alt="" />
+          <div className='md:mt-10 mx-10 flex flex-col md:flex-row items-center gap-3'>
+            <img src={about2} alt="" className='h-full rounded-2xl'/>
+            <img src={about3} className='md:h-[405px] w-full rounded-2xl' alt="" />
           </div>
-          <div className='mt-10 lg:w-[50%] mx-5 lg:mx-0 lg:mr-10 p-3 pb-[-55px] shadow-gray-600 shadow-2xl rounded-xl'>
-            <h1 className='text-2xl ml-10 text-center font-bold text'>What I Do</h1>
+          <div className='mt-10 lg:w-[50%] lg:mx-10 mx-10 p-3 pb-[-55px] shadow-gray-600 shadow-2xl rounded-xl'>
+            <h1 className='text-2xl text-center font-bold text'>What I Do</h1>
             <p className='mt-2 font-bold'>Role: MERN Stack Developer</p>
             <p>I'm a passionate and versatile Full-Stack Developer in the MERN Stack
               <b> (MongoDB, Express.js, React, and Node.js).</b>
@@ -280,17 +280,17 @@ const Portfolio = () => {
               I thrive in collaborative environments and am equally comfortable working independently. Whether it's building a new project from the ground up or refining an existing application, I am dedicated to delivering high-quality work that exceeds expectations.</p>
             <p className='font-bold mt-10'><span className='text'>Email:</span> firas020604@gmail.com</p>
             <p className='font-bold mt-2'><span className='text'>Place:</span> Nandanam, Chennai</p>
-            <button className='mt-5 font-bold start-page text-white p-1 px-2'>Resume</button>
+            <a target='_blank' href="https://drive.google.com/file/d/1vVY2eohv57_98cBtuv3Y9V9kCtmBdEuG/view?usp=drive_link"><button className='mt-5 font-bold start-page text-white p-1 px-2'>Resume</button></a>
           </div>
         </div>
       </main>
 
       {/* Skills Section */}
       <div id='techstack'
-        className={`tech-stack-section animated-section m-5 mt-14 lg:m-14 text-center transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'
+        className={`tech-stack-section animated-section m-5 mx-10 lg:mx-32 mt-14 text-center transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'
           }`}
       >
-        <h1 className='text-[36px] md:text-[40px] font-bold'>
+        <h1 className='text-[26px] md:text-[40px] font-bold'>
           <u>Tech Stack</u> Insights
         </h1>
 
@@ -359,13 +359,13 @@ const Portfolio = () => {
 
       {/* Project Section */}
       <div id='project'>
-        <h1 className='animated-section text-[36px] md:text-[40px] font-bold text-center mt-10'>Latest <span className='underline'>Projects</span></h1>
+        <h1 className='animated-section text-[26px] md:text-[40px] font-bold text-center mt-10'>Latest <span className='underline'>Projects</span></h1>
         <Project />
       </div>
 
       {/* Internship Section */}
-      <div className="animated-section flex flex-col items-center justify-center" id='internship'>
-        <h1 className="text-[36px] md:text-[40px] underline text-center m-3 font-bold">Internships</h1>
+      <div className="animated-section flex flex-col mt-16 mx-5 md:mx-0 items-center justify-center" id='internship'>
+        <h1 className="text-[26px] md:text-[40px] underline text-center m-3 font-bold">Internships</h1>
         <div className="flex flex-col items-center justify-center w-full px-4">
           {details.map((item, index) => {
             const isEven = index % 2 === 0;
@@ -401,12 +401,12 @@ const Portfolio = () => {
       </div>
 
       {/* Contact Section */}
-      <section className="contact animated-section mt-14 mx-4 md:mx-20" id="contact">
+      <section className="contact animated-section mt-14 mx-4 md:ml-32 md:mx-20" id="contact">
         <h2 className="heading text-[32px] md:text-[40px] font-bold text-center mb-6">
           <i className="fas fa-headset"></i> Get in <span className="text-blue-600">Touch</span>
         </h2>
 
-        <div className="container px-4 md:px-20">
+        <div className="container px-4">
           <div className="flex flex-col md:flex-row items-center justify-center p-10 shadow-2xl shadow-gray-600 rounded-xl">
             <div className="w-full md:w-1/2 mb-8 md:mb-0">
               <div className="image-box text-center">
