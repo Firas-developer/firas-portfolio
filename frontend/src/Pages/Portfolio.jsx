@@ -171,6 +171,23 @@ const Portfolio = () => {
     }
   }
 
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "38f7c131-059e-45b9-8ef9-4cb35e689fa3");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    alert("Message Submitted Successfully!")
+    
+  };
+
   return (
     <div>
       {/* Nabar Section */}
@@ -268,7 +285,7 @@ const Portfolio = () => {
         </div>
         <div className='flex flex-col lg:flex-row gap-[8%]'>
           <div className='md:mt-10 mx-10 flex flex-col md:flex-row items-center gap-3'>
-            <img src={about2} alt="" className='h-full rounded-2xl'/>
+            <img src={about2} alt="" className='h-full rounded-2xl' />
             <img src={about3} className='md:h-[405px] w-full rounded-2xl' alt="" />
           </div>
           <div className='mt-10 lg:w-[50%] lg:mx-10 mx-10 p-3 pb-[-55px] shadow-gray-600 shadow-2xl rounded-xl'>
@@ -418,7 +435,7 @@ const Portfolio = () => {
                 />
               </div>
             </div>
-            <form id="contact-form" onSubmit={handleSubmit} className="w-full md:w-1/2">
+            <form id="contact-form" onSubmit={onSubmit} className="w-full md:w-1/2">
               <div className="form-group space-y-6">
                 <div className="field relative">
                   <input
@@ -437,23 +454,10 @@ const Portfolio = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
                   />
                   <i className="fas fa-envelope absolute top-4 right-3 text-gray-400"></i>
-                </div>
-                <div className="field relative">
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="Phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
-                  />
-                  <i className="fas fa-phone-alt absolute top-4 right-3 text-gray-400"></i>
                 </div>
                 <div className="message relative">
                   <textarea
