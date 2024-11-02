@@ -1,9 +1,9 @@
 import project1 from '../assets/projects/allmart.png'
 import project2 from '../assets/projects/employee.png'
-import project3 from '../assets/projects/greenden.png'
+import project3 from '../assets/projects/notes.png'
 import project5 from '../assets/projects/nostra.png'
 import project6 from '../assets/projects/tripadvisor.png'
-import project7 from '../assets/projects/udemy.png'
+import project7 from '../assets/projects/skillplus.png'
 export const projects = [
   {
     "name": "AllMart E-Commerce Website",
@@ -47,23 +47,23 @@ export const projects = [
     }
   },
   {
-    "name": "Udemy Clone",
-    "desc": "Developed and Created a clone of Udemy Website using HTML and CSS",
+    "name": "Skill Plus",
+    "desc": "E-learning Website using MERN Stack with Gen AI Integration",
     "image": project7,
-    "category": "Frontend",
+    "category": "MERN Stack with Gen AI",
     "links": {
-      "view": "https://firas-developer.github.io/udemy-clone/",
-      "code": "https://github.com/Firas-developer/udemy-clone"
+      "view": "https://skill-plus-chi.vercel.app/",
+      "code": "https://github.com/firas-07/skill-plus"
     }
   },
   {
-    "name": "Greenden Project",
-    "desc": "Developed a Plants Selling Website using Tailwindcss framework with reponsiveness",
+    "name": "TSF Notes Web App",
+    "desc": "Developed a Notes Web App using Vite JS, Tailwind CSS and Json Webtokens",
     "image": project3,
-    "category": "Tailwindcss",
+    "category": "Vite JS",
     "links": {
-      "view": "https://firas-developer.github.io/Greeden/",
-      "code": "https://github.com/Firas-developer/Greeden"
+      "view": "https://tsf-notes-rust.vercel.app/",
+      "code": "https://github.com/Firas-developer/TSF-Notes"
     }
   }
 ]
